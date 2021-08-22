@@ -5,6 +5,10 @@ from resources.recipe import RecipeListResource, RecipeResource, RecipePublishRe
 app = Flask(__name__)
 api = Api(app)
 
+@app.route('/')
+def index():
+    return "It is working.  Figure out the issue, Chica"
+
 api.add_resource(RecipeListResource)
 api.add_resource(RecipeResource)
 api.add_resource(RecipePublishResource)
