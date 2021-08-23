@@ -13,7 +13,7 @@ class Recipe:
         self.id = get_last_id()
         self.name = name
         self.description = description
-        self.numb_of_serving = num_of_servings
+        self.num_of_servings = num_of_servings
         self.cook_time = cook_time
         self.directions = directions
         self.is_publish = False
